@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Online Booking Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0px;}
+            
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        img{
+            margin-left: 1000px;
+            image-orientation: 10%;
+
+        }
+
+    marquee{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(255, 153, 153);
+        color: white;
+        animation-name: marquee;
+        animation-duration: 0.5s;
+        transition: ease;
+        animation-iteration-count: infinite;
+       
+    }
+    @keyframes marquee{
+        from{color:rgb(0, 0, 0);}
+        to{color:rgb(255, 255, 255);}
+    }
+
+    </style>
+</head>
+<body>
+
+<header style="background-color: #0a0144; color:white;"  >
+    <h1>Online Booking Page</h1>
+    <!--<img src="C:\Users\dell\Desktop\WPD Micro\aeroplane.jpg" alt="aeroplane.jpg" style="margin-bottom: 10px;"> ---></header>
+ 
+<marquee style="margin: 12px;"> Book Your Ticker Here And Enjoy The Journey With Galexy Hub....</marquee>
+
+<div class="container">
+    <form action="#" method="post">
+
+        <fieldset> 
+            <legend> Personal Information </legend><br>
+        <label for="name">Name:-</label>
+        <input type="text" id="name" name="name" placeholder="Passenger Name" required>
+
+        <label for="email">Email:-</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="phone">Phone No:-</label>
+        <input type="text" id="phone" name="phone" placeholder="91xxxxxxxxxx" required>
+
+        <label for="Age">Age:-</label>
+        <input type="number"  name="Age" placeholder=" Age" required><br><br>
+
+        <label for="">Pacenger is:-</label>
+            <select id="class" name="Adult" required>
+            <option value=""> Select </option>
+            <option value="Adult">Adult(s)(>12 years)</option>
+            <option value="Senior Citizen">Senior Citizen(s)(>60 years)</option>
+            <option value="Children">Children(2 to 12 years)</option>
+            <option value="Infant"> Infant(s)(3 days to 2 years)</option>
+        </select>
+         
+        
+
+    </fieldset>
+
+         <fieldset> 
+            <legend>Status</legend><br>
+            From:- <input type="text" id="date" name="from" placeholder="From" required >
+            To:- <input type="text" id="date" name="to" placeholder="To" required >
+            Date:- <input type="date" id="date" name="date" placeholder="Date" required ><br /><br>
+            Time:-<input type="time" id="time" name="time" placeholder="time"><br /><br>
+            Day:- <input type="text" id="day" name="day" placeholder="Day" required> <br>
+         
+         </fieldset>
+
+         <fieldset> 
+            <legend>Other</legend><br>
+        <label for="service" >Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Service</option>
+            <option value="haircut">Haircut</option>
+            <option value="massage">Massage</option>
+            <option value="facial">Facial</option>
+        </select>
+
+        <label for="service" >Select Class:</label>
+        <select id="Class" name="Class" required>
+            <option value="">Select Class</option>
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+            <option value="First">First</option>
+        </select>
+        Payment:- <input type="number" name="Payment" placeholder="XXXXX $" required > <inputs type="submit" value="Done" >
+            
+        </fieldset><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+<footer style="background-color: #0a0144; color:white;">
+    <h3>  Galaxy Hub </h3>
+    <center> Contact us <br><br> +91 96998 92746           +91 81490 50777</center>
+<hr>
+Copyright 2024 Galaxy Hub. All rights reserved.</footer>
+      
+
+
+    
+     
+</body>
+</html>
